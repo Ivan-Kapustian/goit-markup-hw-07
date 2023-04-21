@@ -1,0 +1,122 @@
+@media screen and (min-width: 768px) {
+  .container {
+    width: 736px;
+  }
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+  .hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    width: 496px;
+    margin-bottom: 36px;
+  }
+  .title {
+    text-align: left;
+  }
+  .list-main {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .list-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .main-dscr {
+    text-align: left;
+  }
+  .team-list {
+    gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .team-item {
+  }
+}
+
+/* ^^^^^^^^^^___________^^^^^^^^^^^__________^^^^^^^^^^ */
+/* ^^^^^^^^^^___________^^^^^^^^^^^__________^^^^^^^^^^ */
+/* ^^^^^^^^^^___________^^^^^^^^^^^__________^^^^^^^^^^ */
+/* ^^^^^^^^^^___________^^^^^^^^^^^__________^^^^^^^^^^ */
+/* ^^^^^^^^^^___________^^^^^^^^^^^__________^^^^^^^^^^ */
+/* ^^^^^^^^^^___________^^^^^^^^^^^__________^^^^^^^^^^ */
+/* ^^^^^^^^^^___________^^^^^^^^^^^__________^^^^^^^^^^ */
+
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+    padding: 0 15px;
+  }
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/office-bg.jpg);
+    max-width: 1440px;
+  }
+  .hero-title {
+    margin-bottom: 48px;
+  }
+  .main {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .main-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--secondary-white);
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+  }
+
+  .list-main {
+    display: flex;
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+  .list-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+  .title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .main-dscr {
+    font-weight: 400;
+  }
+  .explain {
+    display: block;
+    padding-bottom: 120px;
+  }
+  .explain-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--secondary-text);
+    margin-bottom: 72px;
+  }
+  .explain-list {
+    justify-content: center;
+    display: flex;
+    gap: 24px;
+    padding-bottom: 120px;
+  }
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .team-list {
+    flex-wrap: nowrap;
+  }
+}
