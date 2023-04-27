@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container navi">
         <nav class="navigation">
           <a href="./index.html" class="logo logo-link"
@@ -49,7 +49,87 @@
           </ul>
         </address>
       </div>
-    </header> -->
+      <div class="mob-head container">
+        <a href="./index.html" class="logo logo-link"
+          >Web<span class="studio">Studio</span></a
+        >
+        <button class="menu-open" type="button" data-menu-open>
+          <svg class="icon-burger">
+            <use href="./images/symbol-defs.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-menu is-hidden" data-menu>
+        <div>
+          <button type="button" data-menu-close class="menu-close link">
+            <svg class="close-icon">
+              <use href="./images/symbol-defs.svg#icon-Vector"></use>
+            </svg>
+          </button>
+          <nav class="mob-menu">
+            <ul class="mob-list">
+              <li class="mob">
+                <a class="mob-link link" href="./index.html">Studio</a>
+              </li>
+              <li class="mob">
+                <a class="mob-link link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="mob">
+                <a class="mob-link link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <address class="mob-adress">
+            <ul class="mob-contact">
+              <li>
+                <a href="tel:+110001111111" class="mob-tel-link link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="mob-mail-link link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="mob-social-div">
+            <ul class="mob-social">
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link link">
+                  <svg class="mob-social-icon">
+                    <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link link">
+                  <svg class="mob-social-icon">
+                    <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link link">
+                  <svg class="mob-social-icon">
+                    <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link link">
+                  <svg class="mob-social-icon">
+                    <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="hero">
         <div class="container">
@@ -121,11 +201,17 @@
           <h2 class="explain-title">What are we doing</h2>
           <ul class="explain-list">
             <li>
-              <img src="./images/img1.jpg" alt="analyze picture" width="360" />
+              <img
+                src="./images/img1.jpg"
+                srcset="./images/img1@2x.jpg"
+                alt="analyze picture"
+                width="360"
+              />
             </li>
             <li>
               <img
                 src="./images/img2.jpg"
+                srcset="./images/img2@2x.jpg"
                 alt="application picture"
                 width="360"
               />
@@ -133,6 +219,7 @@
             <li>
               <img
                 src="./images/img3.jpg"
+                srcset="./images/img3@2x.jpg"
                 alt="multiplatform picture"
                 width="360"
               />
@@ -148,6 +235,7 @@
             <li class="team-item">
               <img
                 src="./images/img-1.jpg"
+                srcset="./images/img-1@2x.jpg"
                 alt="Mark Guerrero photo"
                 width="264"
               />
@@ -195,7 +283,12 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/img-2.jpg" alt="Tom Ford photo" width="264" />
+              <img
+                src="./images/img-2.jpg"
+                alt="Tom Ford photo"
+                width="264"
+                srcset="./images/img-2@2x.jpg"
+              />
               <div class="team-card">
                 <h3 class="team-title">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -242,6 +335,7 @@
             <li class="team-item">
               <img
                 src="./images/img-3.jpg"
+                srcset="./images/img-3@2x.jpg"
                 alt="Camila Garcia photo"
                 width="264"
               />
@@ -291,6 +385,7 @@
             <li class="team-item">
               <img
                 src="./images/img-4.jpg"
+                srcset="./images/img-4@2x.jpg"
                 alt="Daniel Wilson photo"
                 width="264"
               />
@@ -543,5 +638,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

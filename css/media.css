@@ -1,70 +1,209 @@
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
+@media screen and (min-width: 428px) {
+  .mob-social {
+    gap: 56px;
   }
   .hero {
-    padding-top: 188px;
-    padding-bottom: 188px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/office-bg-tab.jpg);
   }
-  .hero-title {
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    width: 496px;
-    margin-bottom: 36px;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/office-bg-tab@2x.jpg);
+    }
   }
-  .title {
-    text-align: left;
-  }
-  .list-main {
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
-  }
-  .list-item {
-    width: 351px;
-  }
+}
+@media screen and (min-width: 768px) {
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/office-bg@2x.jpg);
+    }
+    .container {
+      max-width: 768px;
+      padding: 0 15px;
+    }
+    .mob-head {
+      display: none;
+    }
+    .navi {
+      display: flex;
+    }
+    .navigation {
+      display: flex;
+    }
+    .nav-list {
+      display: flex;
+      gap: 40px;
+      margin-left: 120px;
+    }
+    .nav-link {
+      display: block;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+    .nav-link::after {
+      content: '';
+      height: 4px;
+      border-radius: 2px;
+      width: 100%;
+      background: var(--active-color);
+    }
 
-  .main-dscr {
-    text-align: left;
-  }
-  .team-list {
-    gap: 24px;
-  }
-  .customers-item {
-    width: 168px;
-  }
-  .customers-list {
-    gap: 24px;
-  }
-  .customers-link {
-    width: 168px;
-  }
-  .footer {
-    padding-left: 108px;
-  }
-  .footer-flex {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .footer-logo {
-    margin-right: 24px;
-    text-align: left;
-  }
-  .footer-div {
-    text-align: left;
-  }
-  .subscribe-input {
-    display: flex;
-  }
-  .subscribe {
-    text-align: left;
-  }
-  .footer-input {
-    width: 264px;
-  }
-  .footer-btn {
-    margin-left: 24px;
+    .contact-link {
+      display: block;
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.04em;
+      margin-bottom: 12px;
+    }
+    .adress {
+      margin-left: auto;
+      padding: 16px 16px 0;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      color: var(--secondary-text);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .nav-link:hover,
+    .nav-link:focus {
+      color: var(--active-color);
+    }
+
+    .adress {
+      font-style: normal;
+    }
+    .contact-link {
+      color: var(--main-text);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .contact-link:hover,
+    .contact-link:focus {
+      color: var(--active-color);
+    }
+    .current {
+      position: relative;
+      color: var(--active-color);
+    }
+    .current:after {
+      content: '';
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background: var(--active-color);
+      position: absolute;
+      left: 0;
+      top: 69px;
+    }
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/office-bg.jpg);
+      padding-top: 188px;
+      padding-bottom: 188px;
+    }
+
+    .hero-title {
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 1.07;
+      max-width: 496px;
+      margin-bottom: 36px;
+    }
+    .title {
+      text-align: left;
+    }
+    .list-main {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .list-item {
+      flex-basis: calc((100% - 24px) / 2);
+    }
+
+    .main-dscr {
+      text-align: left;
+    }
+    .team-list {
+      gap: 24px;
+    }
+    .customers {
+      padding-left: 93px;
+      padding-right: 93px;
+    }
+    .customers-item {
+      flex-basis: calc((100% - 48px) / 3);
+    }
+    .customers-list {
+      gap: 72px 24px;
+    }
+    .footer-flex {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 108px;
+    }
+    .footer-logo {
+      margin-right: 24px;
+      text-align: left;
+    }
+    .footer-div {
+      text-align: left;
+    }
+    .subscribe-input {
+      display: flex;
+    }
+    .subscribe {
+      text-align: left;
+    }
+    .footer-input {
+      width: 264px;
+    }
+    .footer-btn {
+      margin-left: 24px;
+    }
+    .portfolio {
+      padding-top: 64px;
+      padding-bottom: 96px;
+    }
+    .btn-list {
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+    .portfolio-list {
+      row-gap: 72px;
+      column-gap: 16px;
+      margin-top: 64px;
+      flex-basis: calc(100% / 2);
+      justify-content: start;
+    }
+    .modal {
+      width: 408px;
+      min-height: 576px;
+      padding: 72px 24px 24px;
+    }
   }
 }
 
@@ -79,6 +218,22 @@
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+  }
+  .adress {
+    padding: 0;
+  }
+  .nav-list {
+    margin-left: 76px;
+  }
+  .list-contact {
+    display: flex;
+    gap: 40px;
+  }
+  .contact-link {
+    padding-top: 24px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
   .hero {
     padding-top: 188px;
@@ -154,20 +309,26 @@
     padding-bottom: 120px;
   }
   .customers-list {
+    gap: 24px;
     flex-wrap: nowrap;
   }
   .footer-flex {
     flex-wrap: nowrap;
+    padding-left: 0;
   }
 
   .footer {
     padding-top: 100px;
     padding-bottom: 100px;
+    padding-left: 0;
   }
   .footer-input {
     opacity: 1;
   }
-
+  .portfolio {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
   .footer-div {
     margin-left: 120px;
     margin-right: 80px;

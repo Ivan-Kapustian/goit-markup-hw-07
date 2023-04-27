@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
     <header class="header">
@@ -25,9 +26,7 @@
               <a class="nav-link link" href="./index.html">Studio</a>
             </li>
             <li class="link">
-              <a class="nav-link link current" href="./portfolio.html"
-                >Portfolio</a
-              >
+              <a class="nav-link link current" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="link">
               <a class="nav-link link" href="">Contacts</a>
@@ -50,7 +49,88 @@
           </ul>
         </address>
       </div>
+      <div class="mob-head container">
+        <a href="./index.html" class="logo logo-link"
+          >Web<span class="studio">Studio</span></a
+        >
+        <button class="menu-open" type="button" data-menu-open>
+          <svg class="icon-burger">
+            <use href="./images/symbol-defs.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-menu is-hidden" data-menu>
+        <div>
+          <button type="button" data-menu-close class="menu-close link">
+            <svg class="close-icon">
+              <use href="./images/symbol-defs.svg#icon-Vector"></use>
+            </svg>
+          </button>
+          <nav class="mob-menu">
+            <ul class="mob-list">
+              <li class="mob">
+                <a class="mob-link link" href="./index.html">Studio</a>
+              </li>
+              <li class="mob">
+                <a class="mob-link link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="mob">
+                <a class="mob-link link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <address class="mob-adress">
+            <ul class="mob-contact">
+              <li>
+                <a href="tel:+110001111111" class="mob-tel-link link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="mob-mail-link link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="mob-social-div">
+            <ul class="mob-social">
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link link">
+                  <svg class="mob-social-icon">
+                    <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link link">
+                  <svg class="mob-social-icon">
+                    <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link link">
+                  <svg class="mob-social-icon">
+                    <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link link">
+                  <svg class="mob-social-icon">
+                    <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
+  <body>
     <main>
       <section class="portfolio">
         <div class="container">
@@ -85,8 +165,7 @@
                   <img
                     src="./images/portfolio/img-1.jpg"
                     alt="photo"
-                    width="360"
-                    height="300"
+
                   />
                   <p class="portfolio-overlay">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -278,7 +357,7 @@
     </main>
     <footer class="footer">
       <div class="container footer-flex">
-        <div>
+        <div class="footer-logo">
           <a href="./index.html" class="logo link"
             >Web<span class="studio-footer">Studio</span></a
           >
@@ -322,29 +401,110 @@
         </div>
         <div class="subscribe">
           <p class="subscribe-text">Subscribe</p>
-          <form action="#">
-            <div class="subscribe-input">
-              <label for="useremail">
-                <input
-                  type="email"
-                  class="footer-input"
-                  id="useremail"
-                  name="useremail"
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                  required
-                  placeholder="E-mail"
-                />
-              </label>
-              <button type="submit" class="footer-btn">
-                Subscribe
-                <svg class="icon-subscribe">
-                  <use href="./images/symbol-defs.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
+          <form action="#" class="subscribe-input">
+            <label for="useremail">
+              <input
+                type="email"
+                class="footer-input"
+                id="useremail"
+                name="useremail"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                required
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="footer-btn">
+              Subscribe
+              <svg class="icon-subscribe">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" data-modal-close class="modal-close link">
+          <svg class="close-icon">
+            <use href="./images/symbol-defs.svg#icon-Vector"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <label for="user-name" class="modal-label">
+            <span class="modal-placeholder">Name</span>
+
+            <input
+              type="text"
+              class="modal-input"
+              id="user-name"
+              name="user-name"
+              required
+            />
+            <svg class="icon-body modal-icon" width="18px" height="24px">
+              <use href="./images/symbol-defs.svg#icon-body"></use>
+            </svg>
+          </label>
+          <label for="user-phone" class="modal-label">
+            <span class="modal-placeholder">Phone</span>
+
+            <input
+              type="tel"
+              class="modal-input"
+              id="user-phone"
+              name="user-phone"
+              required
+            />
+            <svg class="icon-phone modal-icon" width="18px" height="24px">
+              <use href="./images/symbol-defs.svg#icon-phone"></use>
+            </svg>
+          </label>
+          <label for="user-email" class="modal-label">
+            <span class="modal-placeholder">Email</span>
+            <input
+              type="email"
+              class="modal-input"
+              id="user-email"
+              name="user-email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              required
+            />
+            <svg class="icon-email modal-icon" width="18px" height="24px">
+              <use href="./images/symbol-defs.svg#icon-email"></use>
+            </svg>
+          </label>
+          <label for="user-text" class="textarea-label">
+            <span class="modal-placeholder">Comment</span>
+            <textarea
+              class="modal-textarea"
+              id="user-text"
+              name="user-text"
+              placeholder="Text input"
+              required
+            ></textarea>
+          </label>
+          <input
+            type="checkbox"
+            class="checkbox visually-hidden"
+            name="privacy"
+            id="privacy"
+            value="true"
+          />
+          <label for="privacy" class="privacy">
+            <span>
+              <svg class="icon-check">
+                <use href="./images/symbol-defs.svg#icon-check"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the&nbsp;
+            <a class="privacy-link" href="">Privacy Policy</a>
+          </label>
+          <button type="submit" class="modal-btn">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
