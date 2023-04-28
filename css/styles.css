@@ -59,6 +59,7 @@ body {
   max-width: 428px;
   padding: 0 16px;
 }
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -71,8 +72,6 @@ body {
 .logo-link {
   text-decoration: none;
   cursor: pointer;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .studio {
   color: var(--secondary-text);
@@ -88,21 +87,26 @@ body {
 }
 .mob-head {
   display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  justify-content: space-between;
 }
 .menu-open {
-  display: block;
+  display: flex;
+  align-self: center;
   margin-left: auto;
   width: 32px;
   height: 22px;
   background: none;
   border: none;
   cursor: pointer;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .icon-burger {
   width: 32px;
   height: 22px;
+}
+.current {
+  color: var(--active-color);
 }
 /* ____--__--__--__--__--__--__--__--__--__--________MODAL-MENU__________ */
 .modal-menu {
@@ -140,10 +144,14 @@ body {
   background-color: var(--active-color);
   fill: var(--white);
 }
-.mob {
-  margin-bottom: 40px;
+.mob-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
+
 .mob-link {
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -155,10 +163,11 @@ body {
   color: var(--active-color);
 }
 .mob-adress {
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 .mob-tel-link {
   display: block;
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -167,6 +176,7 @@ body {
 }
 .mob-mail-link {
   display: block;
+  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -320,7 +330,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-  gap: 24px;
+  gap: 72px;
 }
 .team-card {
   padding-bottom: 32px;
@@ -379,7 +389,6 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 72px;
 }
 /* ____--__--__--__--__--__--__--__--__--__--________CUSTOMERS__________ */
 .customers {
@@ -631,7 +640,7 @@ body {
   transition: opacity 500ms linear, visibility 500ms linear;
 }
 .modal {
-  width: 392px;
+  width: 92%;
   min-height: 584px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -702,11 +711,11 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-body {
-  top: 141px;
+  top: 163px;
   left: 43px;
 }
 .modal-input {
-  width: 360px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -722,11 +731,11 @@ body {
   fill: var(--iris);
 }
 .icon-phone {
-  top: 204px;
+  top: 226px;
   left: 43px;
 }
 .icon-email {
-  top: 270px;
+  top: 292px;
   left: 43px;
 }
 .textarea-label {
@@ -742,7 +751,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.04em;
   display: block;
-  width: 360px;
+  width: 100%;
   height: 120px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
