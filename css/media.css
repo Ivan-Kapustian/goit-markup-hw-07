@@ -141,7 +141,8 @@
   }
   .list-main {
     display: flex;
-    gap: 24px;
+    flex-direction: row;
+    gap: 72px 24px;
     flex-wrap: wrap;
   }
   .list-item {
@@ -150,6 +151,9 @@
 
   .main-dscr {
     text-align: left;
+  }
+  .team .container {
+    width: 582px;
   }
   .team-list {
     gap: 64px 24px;
@@ -314,6 +318,9 @@
   .team {
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+  .team .container {
+    width: 1158px;
   }
   .team-list {
     flex-wrap: nowrap;
