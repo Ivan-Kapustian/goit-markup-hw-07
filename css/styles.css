@@ -344,6 +344,9 @@ body {
   gap: 24px;
   justify-content: center;
 }
+.team-text {
+  margin-bottom: 8px;
+}
 .social-item {
   width: 40px;
   height: 40px;
@@ -794,6 +797,7 @@ body {
   justify-content: center;
   fill: transparent;
   margin-right: 8px;
+  flex-shrink: 0;
 }
 
 .icon-check {
